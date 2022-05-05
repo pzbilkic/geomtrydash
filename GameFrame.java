@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
+import java.awt.*;
 
 import javax.swing.*;
 
@@ -17,10 +18,12 @@ public class GameFrame extends JFrame {
 
 	// where the game objects are displayed
 	private JPanel panel = new JPanel() {
+		Image img = Toolkit.getDefaultToolkit().getImage("bg.jpg");
+
 		@Override
 		public void paintComponent(Graphics g) {
 			super.paintComponent(g);
-			game.drawTheGame(g);
+			g.drawImage(img, 0, 0, null);
 			// tried to get rid of some stuttering, changing REFRESH
 			// improved this issue
 			panel.getToolkit().sync();
