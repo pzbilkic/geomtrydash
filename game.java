@@ -19,7 +19,7 @@ public class game {
     }
 
     public void drawTheGame(Graphics g) {
-
+        square.draw(g);
     }
 
     public void upHit(ActionEvent e) {
