@@ -1,4 +1,4 @@
-public class square {
+git public class square extends object{
 
     public void draw(graphics g) {
 
@@ -16,7 +16,7 @@ public class square {
 
     }
 
-    
+
 
 
 }
