@@ -1,22 +1,22 @@
-import java.awt.*;
-
 public class square {
 
-    Image sprite = Toolkit.getDefaultToolkit().getImage("squareSprite.jpg");
-
-    public square() {
+    public void draw(graphics g) {
 
     }
 
-    public void move() {
+    public void jump(){
 
     }
 
-    public void jump() {
+    public void death(){
 
     }
 
-    public void draw(Graphics g) {
-        g.drawImage(sprite, 50, 50, null);
+    public void collision(){
+
     }
+
+    
+
+
 }
